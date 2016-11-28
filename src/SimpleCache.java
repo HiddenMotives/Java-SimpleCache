@@ -26,7 +26,7 @@ import java.util.Scanner;
  * 
  */
 
-public class SimpleCache {
+public final class SimpleCache {
     
     // Cache time is defined in day intervals.
     private int cache_time = 1;
@@ -36,6 +36,10 @@ public class SimpleCache {
     
     // Extension of the cached files
     private String cache_extension = ".cache";
+    
+    public SimpleCache() {
+        this.set_cache_path(cache_path);
+    }
 
     public int get_cache_time () {
         return this.cache_time;
