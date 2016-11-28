@@ -8,7 +8,7 @@ A very basic usage example:
 
 ```java
 SimpleCache cache = new SimpleCache();
-String data = cache.get_data('label', 'http://some.api.com/file.json');
+String data = cache.get_data("label", "http://some.api.com/file.json");
 System.out.println(data);
 ```
 
