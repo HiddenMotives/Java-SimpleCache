@@ -22,7 +22,7 @@ cache.set_cache_extension(".json");
 
 String data = null;
 
-if(cache.is_cached("label)) {
+if(cache.is_cached("label")) {
     data = cache.get_cache("label");
 } else {
     data = cache.grab_url("http://some.api.com/file.json");
